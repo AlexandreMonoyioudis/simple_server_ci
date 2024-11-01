@@ -31,4 +31,4 @@ jobs:
       # Now we run our tests
       - name: Test with pytest
         run: |
-          pip run pytest
+          pytest
