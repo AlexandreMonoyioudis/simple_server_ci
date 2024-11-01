@@ -24,6 +24,8 @@ jobs:
       # This step installs pip, pipenv, and our dependencies
       - name: Install dependencies
         run: | # Note that there's no reference here — just commands to run
+          python -m venv .Venv
+          source .Venv/bin/activate
           python -m pip install --upgrade pip
           pip install pytest
           pip install flask
